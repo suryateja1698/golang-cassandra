@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/suryateja1698/golang-cassandra/db"
+)
 
 func main() {
-	fmt.Println("first commit")
+	conn := db.Init()
+	defer conn.Close()
 }
