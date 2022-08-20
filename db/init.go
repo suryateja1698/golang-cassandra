@@ -10,7 +10,8 @@ import (
 
 var Tables = []string{
 	`CREATE TABLE IF NOT EXISTS player_details 
-	(id text PRIMARY KEY, first_name text, last_name text, age int, country text, position text, created_at TIMESTAMP, updated_at TIMESTAMP );`,
+	(id text PRIMARY KEY, first_name text, last_name text, age int, country text, position text, joined_year int, joined_month int,
+	 created_at TIMESTAMP, updated_at TIMESTAMP );`,
 }
 
 var Session *gocql.Session

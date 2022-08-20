@@ -7,4 +7,5 @@ import (
 
 func Routes(r *gin.Engine) {
 	r.GET("/healthcheck", service.HealthCheck)
+	r.POST("/player-details", service.AddPlayerDetails)
 }
